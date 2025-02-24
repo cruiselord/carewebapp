@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Glorious Care Inc. - OpenGraph Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    .container {
+      width: 1200px;
+      height: 630px;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), white);
+    }
+    .content {
+      position: absolute;
+      inset: 0;
+      padding: 64px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .border {
+      position: absolute;
+      inset: 32px;
+      border: 8px solid rgba(85, 107, 47, 0.2);
+      pointer-events: none;
+    }
+    .title {
+      font-size: 72px;
+      font-weight: 700;
+      color: #556B2F;
+      margin: 0 0 24px;
+      line-height: 1.2;
+    }
+    .subtitle {
+      font-size: 36px;
+      color: #4A5568;
+      max-width: 900px;
+      margin: 0 0 48px;
+      line-height: 1.4;
+    }
+    .services {
+      display: flex;
+      gap: 24px;
+    }
+    .service {
+      padding: 16px 32px;
+      border: 2px solid #DAA520;
+      border-radius: 8px;
+      color: #DAA520;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .blob1 {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: rgba(85, 107, 47, 0.1);
+      border-radius: 50%;
+      filter: blur(80px);
+      top: -100px;
+      right: -100px;
+    }
+    .blob2 {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: rgba(218, 165, 32, 0.1);
+      border-radius: 50%;
+      filter: blur(80px);
+      bottom: -100px;
+      left: -100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="blob1"></div>
+    <div class="blob2"></div>
+    <div class="border"></div>
+    <div class="content">
+      <h1 class="title">Glorious Care Inc.</h1>
+      <p class="subtitle">Professional and compassionate senior care services tailored to your loved ones' needs</p>
+      <div class="services">
+        <div class="service">Assisted Living</div>
+        <div class="service">Memory Care</div>
+        <div class="service">Skilled Nursing</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 
