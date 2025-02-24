@@ -20,12 +20,16 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#006B4F",
+          DEFAULT: "#556B2F",
+          light: "#6B8E23",
+          dark: "#4B5320",
           foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "#E5F2F0",
-          foreground: "#2D3748",
+          DEFAULT: "#DAA520",
+          light: "#FFD700",
+          dark: "#B8860B",
+          foreground: "#000000",
         },
         accent: {
           DEFAULT: "#FFB74D",

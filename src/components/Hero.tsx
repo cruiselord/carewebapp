@@ -21,11 +21,11 @@ const testimonials = [
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-secondary to-white overflow-hidden">
+    <div className="relative min-h-screen bg-gradient-to-br from-secondary/20 to-white overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 -left-40 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/20 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 -left-40 w-80 h-80 bg-secondary/20 rounded-full blur-3xl" />
       </div>
 
       {/* Main content */}
@@ -40,7 +40,7 @@ const Hero = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-primary leading-tight">
               Trusted Home Care
               <br />
-              <span className="text-accent">For Your Loved Ones</span>
+              <span className="text-secondary">For Your Loved Ones</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-xl">
               We understand that home is where the heart is. Our professional caregivers provide 
@@ -48,10 +48,10 @@ const Hero = () => {
               your loved ones receive the attention and support they deserve.
             </p>
             <div className="flex gap-4 flex-wrap">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8">
+              <Button size="lg" className="bg-primary hover:bg-primary-dark text-white text-lg px-8">
                 Get Started
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8">
+              <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 text-lg px-8">
                 Learn More
               </Button>
             </div>
@@ -89,12 +89,12 @@ const Hero = () => {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="min-w-[300px] max-w-[400px] bg-white p-6 rounded-xl shadow-lg snap-center"
+                className="min-w-[300px] max-w-[400px] bg-white p-6 rounded-xl shadow-lg snap-center border border-primary/10"
               >
                 <p className="text-gray-600 italic mb-4">{testimonial.text}</p>
                 <div>
                   <p className="font-semibold text-primary">{testimonial.author}</p>
-                  <p className="text-sm text-gray-500">{testimonial.role}</p>
+                  <p className="text-sm text-secondary">{testimonial.role}</p>
                 </div>
               </motion.div>
             ))}

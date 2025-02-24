@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="flex h-20 items-center justify-between">
           <div className="flex items-center gap-4">
             <Link to="/" className="flex items-center gap-2">
-              <span className="text-2xl font-bold text-primary">CareGiving</span>
+              <span className="text-2xl font-bold text-primary">Glorious Care Inc.</span>
             </Link>
           </div>
           
@@ -20,6 +20,12 @@ const Navbar = () => {
               className="text-sm font-medium text-gray-500 hover:text-primary transition-colors"
             >
               About Us
+            </Link>
+            <Link 
+              to="/services" 
+              className="text-sm font-medium text-gray-500 hover:text-primary transition-colors"
+            >
+              Our Services
             </Link>
             <Link 
               to="/locations" 
@@ -47,17 +53,15 @@ const Navbar = () => {
             </Link>
           </nav>
 
-          <div className="flex items-center gap-4">
-            <Button asChild variant="outline" className="hidden md:flex">
-              <Link to="/book">Book a Consultation</Link>
-            </Button>
+          <Button asChild variant="outline" className="hidden md:flex">
+            <Link to="/book">Book a Consultation</Link>
+          </Button>
             
-            {/* Mobile Menu Button */}
-            <Button variant="ghost" size="icon" className="md:hidden">
-              <Menu className="h-6 w-6" />
-              <span className="sr-only">Toggle menu</span>
-            </Button>
-          </div>
+          {/* Mobile Menu Button */}
+          <Button variant="ghost" size="icon" className="md:hidden">
+            <Menu className="h-6 w-6" />
+            <span className="sr-only">Toggle menu</span>
+          </Button>
         </div>
       </div>
     </header>
